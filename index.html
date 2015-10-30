@@ -1,0 +1,314 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PolyLearn</title>
+
+    <!-- Page styles -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+
+    <link href='//fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title josefin">
+            <img class="android-logo-image" height="40px" src="http://polylearn.co/img/65ad7dd4.logo.png">
+            PolyLearn
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!--
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">email</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field" />
+            </div>
+          </div>
+        -->
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Nos produits</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Le concept</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">La pédagogie</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">L'équipe</a>
+              <a class=" mdl-typography--text-uppercase" href="">
+                <label class="mdl-button mdl-button--icon" for="search-field">
+                  <i class="material-icons">email</i>
+                </label>
+              </a>
+
+
+
+            </nav>
+          </div>
+
+          <!--
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">5.0 Lollipop</li>
+            <li class="mdl-menu__item">4.4 KitKat</li>
+            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+            <li class="mdl-menu__item">Android History</li>
+          </ul>
+        -->
+
+          <span class="android-mobile-title mdl-layout-title">
+            <!--<img class="android-logo-image" src="http://polylearn.co/img/65ad7dd4.logo.png">-->
+            PolyLearn
+          </span>
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="http://polylearn.co/img/65ad7dd4.logo.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Nos produits</a>
+          <a class="mdl-navigation__link" href="">Le concept</a>
+          <a class="mdl-navigation__link" href="">La pédagogie</a>
+          <a class="mdl-navigation__link" href="">L'équipe</a>
+          <a class="mdl-navigation__link" href="">La pédagogie</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Versions</span>
+          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+          <a class="mdl-navigation__link" href="">Android history</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Resources</span>
+          <a class="mdl-navigation__link" href="">Official blog</a>
+          <a class="mdl-navigation__link" href="">Android on Google+</a>
+          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">For developers</span>
+          <a class="mdl-navigation__link" href="">App developer resources</a>
+          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+          <a class="mdl-navigation__link" href="">Android SDK</a>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="android-font android-slogan">Réussir n'a jamais été aussi facile</div>
+          <div class="android-font android-sub-slogan">Bienvenu sur PolyLearn... nous utilisons une technologie d'ancrage mémoriel</div>
+
+<div class="mdl-grid">
+          <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col">
+          <section class="about-panel-1 about-panel--components mdl-color-text--white">
+            <h2>TOEIC/BULATS</h2>
+          </section>
+          </a>
+
+          <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col">
+          <section class="about-panel-2 about-panel--components mdl-color-text--white">
+            <h2>Code de la Route</h2>
+          </section>
+          </a>
+</div>
+
+          <div class="android-font android-create-character">
+            <a href=""><img src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/check-64.png"> choisissez votre examen</a>
+          </div>
+
+          <a href="#screens">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast">Une suite complète d'entrainement</div>
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/078-128.png">
+                <br>
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Cours</a>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/062-128.png">
+                <br>
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Exercices</a>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/052-128.png">
+                <br>
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Examens</a>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/056-128.png">
+                <br>
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Suivi</a>
+            </div>
+            <!--
+            <div class="mdl-cell mdl-cell--3-col">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/auto-on.jpg">
+                <br>
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Et bien plus...</a>
+            </div>
+          -->
+          </div>
+
+          <div class="mdl-typography--headline-color-contrast">et bien plus...</div>
+
+        </div>
+        <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">Ancrage mémoriel</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                Nous avons développé une technologie permettant d'identifier vos faiblesses afin de réduire votre temps de révisions.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                  En savoir plus sur notre technologie&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Temps de révision réduit pour un score maximum</div>
+            <p class="mdl-typography--font-light">
+              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+              <br>
+              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
+        </div>
+        <div class="android-more-section">
+
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col">
+              <img class="img-responsive-100"src="http://polylearn.co/img/index/fd087270.poly_phone.png">
+            </div>
+
+            <div class="mdl-cell mdl-cell--8-col">
+              <div class="android-section-title mdl-typography--display-1-color-contrast">Des applications mobiles</div>
+              <p class="mdl-typography--title-color-contrast">
+                Entrainez-vous depuis votre smartphone
+              </p>
+
+              <img src="http://polylearn.co/img/index/16cf3fe8.playstore.png" width="125">
+              <img width="143" src="http://polylearn.co/img/index/484a65a3.appstore.png">
+            </div>
+
+          </div>
+        </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">PolyLearn © 2015</p>
+            <p class="mdl-typography--font-light">Redécouvrez le monde des révisions</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+              Versions
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">5.0 Lollipop</li>
+              <li class="mdl-menu__item">4.4 KitKat</li>
+              <li class="mdl-menu__item">4.3 Jelly Bean</li>
+              <li class="mdl-menu__item">Android History</li>
+            </ul>
+            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">App developer resources</li>
+              <li class="mdl-menu__item">Android Open Source Project</li>
+              <li class="mdl-menu__item">Android SDK</li>
+              <li class="mdl-menu__item">Android for Work</li>
+            </ul>
+            <a class="android-link mdl-typography--font-light" href="">Blog</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">ESSAYER !</a>
+    <script src="../../material.min.js"></script>
+
+
+  </body>
+</html>
