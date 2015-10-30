@@ -255,6 +255,13 @@ a img{
   margin-right: 32px;
 }
 
+.android-wear-section .inside-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
   .android-wear .android-screen-image {
     width: 40%;
     z-index: 1;
@@ -400,7 +407,7 @@ a img{
 }
 
   .android-more-section .android-section-title {
-    margin-top: 80px;
+    margin-top: 0px;
     padding-bottom: 24px;
   }
 
@@ -444,7 +451,7 @@ a img{
   }
 
 .android-footer {
-  background-color: #fafafa;
+  background-color: #222426;
   position: relative;
 }
 
