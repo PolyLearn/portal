@@ -16,7 +16,7 @@
   limitations under the License
 -->
 
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,23 +46,19 @@
   </head>
   <body>
 
-  {% block content %}{% endblock %}
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    {% block header %}{% include 'header.html' %}{% endblock %}
+
+    <div class="android-content mdl-layout__content">
+      <a name="top"></a>
+      {% block content %}{% endblock %}
+      {% include 'footer.html' %}
+    </div>
+  </div>
 
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
 
+  {% block script %}{% endblock %}
 
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "url": "http://polylearn.co",
-    "logo": "http://polylearn.co/img/65ad7dd4.logo.png",
-    "sameAs" : [
-      "https://www.facebook.com/polylearn.co/",
-      "https://plus.google.com/+Polylearn"
-    ]
-  }
-  </script>
-
-</body>
+  </body>
 </html>
