@@ -20,5 +20,13 @@ def products():
 def concept():
     return render_template('concept.html')
 
+@app.route("/contact")
+def contact():
+    return render_template('contact.html')
+
+@app.route("/pedagogie")
+def pedagogie():
+    return render_template('pedagogie.html')
+
 if __name__ == "__main__":
     app.run()

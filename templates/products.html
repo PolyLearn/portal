@@ -1,45 +1,44 @@
 {% extends 'base.html' %}
 
+{% block title %}Les examens proposés par PolyLearn{% endblock %}
+
+{% block description %}
+Liste des examens que PolyLearn peut vous aider à réussir
+{% endblock %}
+
 {% block content %}
 
 <div class="grey-bg">
 
   <div>
-    <h1 class="mdl-typography--text-center android-slogan android-font">Nos produits</h1>
+    <h1 class="mdl-typography--text-center android-slogan android-font">Les examens</h1>
   </div>
 
-  <!-- Square card -->
-  <style>
-  .demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
-  }
-
-  .demo-card-square .mdl-card__title-text {
-    color: white;
-  }
-
-  </style>
 
   <div class="container mdl-grid">
+    <div class="mdl-cell--1-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+    </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell">
+    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
       <div class="mdl-card__title mdl-card--expand about-panel-1">
         <h2 class="mdl-card__title-text">TOEIC BULATS</h2>
       </div>
       <div class="mdl-card__supporting-text">
         <ul>
           <li>
-            1000 cours
+            230 cours et astuces
           </li>
           <li>
-            3000 question
+            2000 questions
           </li>
           <li>
             10 examens blancs
           </li>
           <li>
-            30 heures d'entrainements
+            20 heures d'entrainements
+          </li>
+          <li>
+            1 glossaire sur-mesure
           </li>
         </ul>
       </div>
@@ -51,36 +50,42 @@
     </div>
 
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell">
+    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
       <div class="mdl-card__title mdl-card--expand about-panel-2">
         <h2 class="mdl-card__title-text">Code de la Route</h2>
       </div>
       <div class="mdl-card__supporting-text">
         <ul>
           <li>
-            1000 cours
+            100 cours et astuces
           </li>
           <li>
             3000 question
           </li>
           <li>
-            10 examens blancs
+            30 examens blancs
           </li>
           <li>
             30 heures d'entrainements
           </li>
+          <li>
+            Signalisation
+          </li>
         </ul>
       </div>
       <div class="mdl-card__actions mdl-card--border">
+        <button class="mdl-button mdl-js-button mdl-button--accent">
+          À venir
+        </button>
+        <!--
         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
           Accéder
         </a>
+      -->
       </div>
     </div>
 
   </div>
-
-
 
 
   <br>

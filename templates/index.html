@@ -7,13 +7,13 @@
   <div class="android-font android-sub-slogan">Bienvenue sur PolyLearn... nous utilisons une technologie d'ancrage mémoriel</div>
 
   <div class="mdl-grid">
-    <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col">
+    <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-phone">
     <section class="about-panel-1 about-panel--components mdl-color-text--white">
       <h2>TOEIC/BULATS</h2>
     </section>
     </a>
 
-    <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col">
+    <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
     <section class="about-panel-2 about-panel--components mdl-color-text--white">
       <h2>Code de la Route</h2>
     </section>
@@ -21,10 +21,10 @@
   </div>
 
   <div class="android-font android-create-character">
-    <a href=""><img src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/check-64.png"> choisissez votre examen</a>
+    <a href=""><i class="material-icons text-success" style="font-size:35px;">check</i> choisissez votre examen</a>
   </div>
 
-  <a href="#screens">
+  <a href="#">
     <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">expand_more</i>
     </button>
@@ -32,81 +32,69 @@
 </div>
 
 <div class="android-screen-section mdl-typography--text-center">
-  <a name="screens"></a>
+  <a name="features"></a>
   <div class="mdl-typography--display-1-color-contrast">Une suite complète d'entrainement</div>
   <br>
   <div class="mdl-typography--headline-color-contrast">et bien plus...</div>
 
-  <div class="mdl-grid">
-    <div class="mdl-cell--3-col">
-    </div>
-    <div class="mdl-cell mdl-cell--3-col" data-sr>
-      <a class="android-image-link" href="">
+  <div class="mdl-grid container">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      <div>
         <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/078-128.png">
         <br>
-      </a>
-      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Cours</a>
-    </div>
-    <div class="mdl-cell mdl-cell--3-col" data-sr>
-      <a class="android-image-link" href="">
-        <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/062-128.png">
-        <br>
-      </a>
-      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Exercices</a>
-    </div>
-    <div class="mdl-cell--3-col">
+      </div>
+      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Cours</div>
     </div>
 
-    <div class="mdl-cell--3-col">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      <div>
+        <img class="android-screen-image" src="http://polylearn.co/img/icons/a6641ac3.target.png">
+        <br>
+      </div>
+      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Identification des faiblesses</div>
     </div>
-    <div class="mdl-cell mdl-cell--3-col" data-sr>
-      <a class="android-image-link" href="">
+
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      <div>
+        <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/062-128.png">
+        <br>
+      </div>
+      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Exercices</div>
+    </div>
+
+
+    <div class="mdl-cell--2-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      <div>
         <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/052-128.png">
         <br>
-      </a>
-      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Examens</a>
+      </div>
+      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Examens</div>
     </div>
-    <div class="mdl-cell mdl-cell--3-col" data-sr>
-      <a class="android-image-link" href="">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      <div>
         <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/056-128.png">
         <br>
-      </a>
-      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Suivi</a>
+      </div>
+      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Suivi</div>
     </div>
-    <!--
-    <div class="mdl-cell mdl-cell--3-col">
-      <a class="android-image-link" href="">
-        <img class="android-screen-image" src="images/auto-on.jpg">
-        <br>
-      </a>
-      <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Et bien plus...</a>
-    </div>
-  -->
+  </div>
+
+<br><br>
+  <div>
+    <a href="{{ url_for('concept')}}" class="mdl-button mdl-js-button mdl-button--primary">
+      Le concept
+    </a>
+
+    <a href="{{ url_for('products')}}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Voir les examens
+    </a>
   </div>
 
 </div>
 <div class="android-wear-section">
-
-  <!--
-  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-    <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">Temps de révision réduit pour un score maximum</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
-      Nous avons développé une technologie permettant d'identifier vos faiblesses afin de réduire votre temps de révisions.
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        En savoir plus sur notre technologie&nbsp;<i class="material-icons">chevron_right</i>
-      </a>
-    </div>
-    <div class="mdl-card__menu">
-      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-        <i class="material-icons">share</i>
-      </button>
-    </div>
-  </div>
--->
 
   <div class="android-wear-band">
 
@@ -133,20 +121,6 @@
   </div>
 </div>
 
-<!--
-<div class="android-customized-section">
-  <div class="android-customized-section-text">
-    <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Temps de révision réduit pour un score maximum</div>
-    <p class="mdl-typography--font-light">
-      Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-      <br>
-      <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-    </p>
-  </div>
-  <div class="android-customized-section-image"></div>
-</div>
--->
-
 
 <div class="android-more-section">
 
@@ -167,11 +141,6 @@
     <div class="mdl-cell mdl-cell--4-col" style="text-align:center">
       <img class="img-responsive-100"src="http://polylearn.co/img/index/fd087270.poly_phone.png">
     </div>
-    <!--
-    <div class="mdl-cell mdl-cell--4-col" style="text-align:center">
-      <img class="img-responsive-100"src="http://polylearn.co/img/index/fd087270.poly_phone.png">
-    </div>
-  -->
 
     <div class="mdl-cell--4-col">
     </div>

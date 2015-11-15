@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}Découvrir la pédagogie PolyLearn{% endblock %}
+
+{% block description %}
+Découvrir la pédagogie PolyLearn.
+{% endblock %}
+
+{% block content %}
+<main class="mdl-demo grey-bg">
+
+        <h1 class="mdl-typography--text-center android-slogan android-font">La pédagogie</h1>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+              <h4>Une pédagogie centrée sur VOUS</h4>
+              Notre équipe pédagogique a rédigé l'intégralité des leçons relatives aux examens.
+              PolyLearn vous entraine sur celles qui vous posent problème afin de combler le plus rapidement possible vos lacunes.
+              Fini le bachotage inutile, nous cernons vos difficultés et vous aidons à y remédier.
+            </div>
+
+            <div class="mdl-card__actions">
+              <a href="{{ url_for('products') }}" class="mdl-button">Voir les examens</a>
+            </div>
+          </div>
+
+          <header class="school-bg mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+          </header>
+        </section>
+
+
+<div class="mdl-grid container mdl-typography--text-center">
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+    <div>
+      <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/078-128.png">
+      <br>
+    </div>
+    <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Cours</div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+    <div>
+      <img class="android-screen-image" src="http://polylearn.co/img/icons/a6641ac3.target.png">
+      <br>
+    </div>
+    <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Identification des faiblesses</div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+    <div>
+      <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/062-128.png">
+      <br>
+    </div>
+    <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Exercices</div>
+  </div>
+
+
+  <div class="mdl-cell--2-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+    <div>
+      <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/052-128.png">
+      <br>
+    </div>
+    <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Examens</div>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+    <div>
+      <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/056-128.png">
+      <br>
+    </div>
+    <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Suivi</div>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+          <section class="section--footer mdl-color--white mdl-grid">
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big">
+                <i class="material-icons">trending_up</i>
+              </div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Une progression rapide</h5>
+              Tous les jours, nous travaillons à vous proposer des outils permettant une progression la plus rapide possible.
+            </div>
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big">
+                <i class="material-icons">thumb_up</i>
+              </div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Des utilisateurs satisfaits</h5>
+              La satisfaction des utilisateurs est au centre de notre travail.
+            </div>
+          </section>
+
+      </main>
+{% endblock %}
