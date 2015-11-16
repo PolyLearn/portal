@@ -30,27 +30,27 @@ def page_not_found(e):
 def index():
     return render_template('index.html')
 
-@app.route("/about")
+@app.route("/about.html")
 def about():
     return render_template('about.html')
 
-@app.route("/products")
+@app.route("/products.html")
 def products():
     return render_template('products.html')
 
-@app.route("/concept")
+@app.route("/concept.html")
 def concept():
     return render_template('concept.html')
 
-@app.route("/contact")
+@app.route("/contact.html")
 def contact():
     return render_template('contact.html')
 
-@app.route("/thanks")
+@app.route("/thanks.html")
 def thanks():
     return render_template('thanks.html')
 
-@app.route("/pedagogie")
+@app.route("/pedagogie.html")
 def pedagogie():
     return render_template('pedagogie.html')
 
