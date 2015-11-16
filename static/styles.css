@@ -608,6 +608,7 @@ a .about-panel--components:hover h2 {
   border: 3px solid white;
   display: inline-block;
   padding: 15px;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .about-panel-1 {
@@ -619,6 +620,12 @@ a .about-panel--components:hover h2 {
 .about-panel-2 {
   background-color: pink;
   background: url('./images/exam/code.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.about-panel-3 {
+  background-color: pink;
+  background: url('./images/exam/bulats.jpg') center center no-repeat;
   background-size: cover;
 }
 
