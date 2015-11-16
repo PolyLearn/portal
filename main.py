@@ -11,6 +11,12 @@ app.config.update(
 )
 freezer = Freezer(app)
 
+@app.context_processor
+def utility_processor():
+    def app_url(app):
+        return u'http://{}.polylearn.co'.format(app)
+    return dict(app_url=app_url)
+
 @app.after_request
 def response_minify(response):
     """

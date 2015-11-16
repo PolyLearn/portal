@@ -1,7 +1,7 @@
 <section class="mdl-color--grey-800 mdl-mega-footer">
 
   <div class="mdl-grid">
-    <a href="#">
+    <a href="{{ app_url('toeic') }}">
     <div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell about-panel-1">
       <div class="mdl-card__title mdl-card--expand"></div>
       <div class="mdl-card__actions">
@@ -26,15 +26,15 @@
   <div class="mdl-mega-footer--top-section">
     <div class="mdl-mega-footer--left-section">
       <a href="https://www.facebook.com/polylearn.co/">
-      <img src="https://cdn2.iconfinder.com/data/icons/micon-social-pack/512/facebook-48.png">
-      </a>
-      &nbsp;
-      <a href="#">
-      <img src="https://cdn2.iconfinder.com/data/icons/micon-social-pack/512/googleplus-48.png">
+      <img src="{{url_for('static', filename='images/social/facebook.png')}}">
       </a>
       &nbsp;
       <a href="https://www.google.com/+Polylearn">
-      <img src="https://cdn2.iconfinder.com/data/icons/micon-social-pack/512/twitter-48.png">
+      <img src="{{url_for('static', filename='images/social/googleplus.png')}}">
+      </a>
+      &nbsp;
+      <a href="https://twitter.com/PolyLearn_co">
+      <img src="{{url_for('static', filename='images/social/twitter.png')}}">
       </a>
     </div>
     <div class="mdl-mega-footer--right-section">
