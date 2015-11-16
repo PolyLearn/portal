@@ -1,0 +1,21 @@
+language: python
+python:
+- '2.7'
+install:
+- pip install -r requirements.txt
+- npm install -g bower
+- bower install
+script: python main.py build
+branches:
+  only: master
+after_success:
+- eval "$(ssh-agent -s)"
+- chmod 600 id_rsa_travis
+- ssh-add id_rsa_travis
+- ssh -o StrictHostKeyChecking=no web@polylearn.co 'bash -s' < deploy.sh
+before_install:
+- openssl aes-256-cbc -K $encrypted_f7f311c637f9_key -iv $encrypted_f7f311c637f9_iv
+  -in id_rsa_travis.enc -out id_rsa_travis -d
+notifications:
+  slack:
+    secure: HTG/qee5qEf8WBAL9uwp7+LQyB6t8q873ixb8kDEyFKYrViieX9CqLcGES1iZuKWScVYv9Bq2RJWdLXgne66IP33K91lcKBBp4xpkBmRt+oB2rnl56gyLib5+gqk8jtvrKWUIf6RGgJxnhW1XENO7M/pLWYNsXapAASNplLs4x85xfhGMkfhDL6kvkxVtXzybrPG6zxkce/vbXz9wueoVQ4nWRSHA9Szcg5Nbaa5qc5sS9xmvzE9SO/vFfNMbo/O44bVE1p45+73CTQeFoyh/p82DjxFZisdHEufOwR52RwbyINoieS5mlDIHSBj5C9nct2CCbOgnLR7GtKBaGvd6XExMtmax+iVKsKb7cYRHuzTb9kqSaYrS8MvxyeeGcIZExmpiFFm+7eu/Mh0c4yvKrF/x0uFo9pUMm705D+VqG6Z7UZU2w+upTTeYMD1ud7xQ8iiBkv69UVXTggY2HU1pkARylH5nOe5xZ0H7SgX7e3fjGr72Pmhm3Ojm4O9zK0OyD0bmNRqtWBJfhMePP4DyVKthbqhHwGMq/6HsXa5q7nlPC47TMxgKg1L3ao0KLd8otIqfZPs462bsIVI4T/ue4ZlLHi1hNS2MjTeS53nhe3Zn2SIT5e2Kak7YvC/VyhRzzMO9OTTkYqULeyG1Dit3Mu2fFNDwnsR3eVkrDWiVx8=
