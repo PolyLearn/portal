@@ -21,10 +21,14 @@
   </div>
 
   <div class="android-font android-create-character">
-    <a href=""><i class="material-icons text-success" style="font-size:35px;">check</i> choisissez votre examen</a>
+    <a href="{{ url_for('products')}}" style="display:inline-block">choisissez votre examen</a>
+    <br>
+    <p>
+      <i class="material-icons text-success" style="font-size:35px; padding-top:5px;">check</i> Nous vous aiderons à réussir
+    </p>
   </div>
 
-  <a href="#">
+  <a href="#features">
     <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">expand_more</i>
     </button>
@@ -37,50 +41,7 @@
   <br>
   <div class="mdl-typography--headline-color-contrast">et bien plus...</div>
 
-  <div class="mdl-grid container">
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
-      <div>
-        <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/078-128.png">
-        <br>
-      </div>
-      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Cours</div>
-    </div>
-
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
-      <div>
-        <img class="android-screen-image" src="http://polylearn.co/img/icons/a6641ac3.target.png">
-        <br>
-      </div>
-      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Identification des faiblesses</div>
-    </div>
-
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
-      <div>
-        <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/062-128.png">
-        <br>
-      </div>
-      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Exercices</div>
-    </div>
-
-
-    <div class="mdl-cell--2-col mdl-cell--hide-phone mdl-cell--hide-tablet">
-    </div>
-
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
-      <div>
-        <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/052-128.png">
-        <br>
-      </div>
-      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Examens</div>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
-      <div>
-        <img class="android-screen-image" src="https://cdn1.iconfinder.com/data/icons/education-colored-icons-vol-2/128/056-128.png">
-        <br>
-      </div>
-      <div clas="mdl-typography--font-regular mdl-typography--text-uppercase">Suivi</div>
-    </div>
-  </div>
+  {% include 'includes/features.html' %}
 
 <br><br>
   <div>
@@ -130,8 +91,8 @@
       Entrainez-vous depuis votre smartphone
     </p>
 
-    <img src="http://polylearn.co/img/index/16cf3fe8.playstore.png" width="125">
-    <img width="143" src="http://polylearn.co/img/index/484a65a3.appstore.png">
+    <img src="{{url_for('static', filename='images/index/playstore.png')}}" width="125">
+    <img width="143" src="{{url_for('static', filename='images/index/appstore.png')}}">
   </div>
 
   <div class="mdl-grid">
@@ -139,7 +100,7 @@
     </div>
 
     <div class="mdl-cell mdl-cell--4-col" style="text-align:center">
-      <img class="img-responsive-100"src="http://polylearn.co/img/index/fd087270.poly_phone.png">
+      <img class="img-responsive-100"src="{{url_for('static', filename='images/index/poly_phone.png')}}">
     </div>
 
     <div class="mdl-cell--4-col">
@@ -148,7 +109,7 @@
   </div>
 </div>
 
-<a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">ESSAYER !</a>
+<a href="{{ url_for('products')}}" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">ESSAYER !</a>
 
 {% endblock %}
 

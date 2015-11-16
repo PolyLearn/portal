@@ -235,9 +235,10 @@ h1 {
 }
 
   .android-create-character a {
-    text-decoration: none;
     color: #767777;
     font-weight: 300;
+    padding: 20px 10px;
+    border: 3px solid #767777;
   }
 
 .android-screen-section {
@@ -920,4 +921,12 @@ a .about-panel--components:hover h2 {
 
 .demo-content h3 {
   margin-top: 48px;
+}
+
+.features {
+  padding-bottom: 20px;
+}
+
+.features img {
+  padding-bottom: 10px;
 }

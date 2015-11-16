@@ -1,0 +1,14 @@
+{
+  "name": "polylearn",
+  "homepage": "https://github.com/florent1933/polylearn",
+  "authors": [
+    "Florent <clapieflor@eisti.eu>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "material-design-lite": "~1.0.6"
+  }
+}

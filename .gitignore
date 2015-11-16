@@ -4,6 +4,8 @@
 __pycache__/
 *.py[cod]
 
+static/vendor/
+
 #bower
 bower_components/
 

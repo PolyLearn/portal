@@ -2,7 +2,7 @@
   <div class="mdl-layout__header-row">
     <a href="{{ url_for('index')}}">
     <span class="android-title mdl-layout-title josefin">
-      <img class="android-logo-image" height="40px" src="http://polylearn.co/img/65ad7dd4.logo.png">
+      <img class="android-logo-image" height="40px" src="{{url_for('static', filename='images/logo.png')}}">
       <span>PolyLearn</span>
     </span>
     </a>
@@ -48,7 +48,7 @@
 
 <div class="android-drawer mdl-layout__drawer">
   <span class="mdl-layout-title">
-    <img class="android-logo-image" src="http://polylearn.co/img/65ad7dd4.logo.png">
+    <img class="android-logo-image" src="{{url_for('static', filename='images/logo.png')}}">
   </span>
   <nav class="mdl-navigation">
     <a class="mdl-navigation__link" href="{{ url_for('products')}}">Les examens</a>
