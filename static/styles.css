@@ -862,6 +862,11 @@ a .about-panel--components:hover h2 {
   z-index: 99;
 }
 
+.mdl-mega-footer--bottom-section .mdl-menu a {
+  display: block;
+  width: 100%;
+}
+
 /* Square card */
 .demo-card-square .mdl-card__title-text {
   color: white;
