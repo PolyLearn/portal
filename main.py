@@ -73,9 +73,7 @@ if __name__ == '__main__':
         freezer.freeze()
         with open("build/sitemap.xml") as f:
              sitemap = f.read()
-        f.close()
         with open("build/sitemap.xml", "w") as f:
              f.write(sitemap.replace("http://localhost/", "http://polylearn.co/"))
-        f.close()
     else:
         app.run()
