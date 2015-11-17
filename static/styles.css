@@ -797,9 +797,11 @@ a .about-panel--components:hover {
   width: 100px;
   height: 100px;
   border-radius: 32px;
-  margin: 8px 0;
+  margin: 12px 0;
   text-align: center;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mdl-demo section .section__circle-container i {
@@ -811,7 +813,9 @@ a .about-panel--components:hover {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  margin: 8px 32px;
+  margin: 12px 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 .mdl-demo .is-small-screen section.section--footer .section__circle--big {
   width: 50px;
