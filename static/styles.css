@@ -580,25 +580,24 @@ h1 {
   height: 400px;
 }
 
-a .about-panel--components:hover h2 {
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-
-  box-shadow: 0 0 0 #cdbe9f inset, 0 0 0 #beae8c inset, 0 0 0 #816f47;
+a .about-panel--components {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
-a .about-panel--components:hover h2 {
-  -moz-transform: scale(1.1);
-   -webkit-transform: scale(1.1);
-   -o-transform: scale(1.1);
-   transform: scale(1.1);
-   -ms-transform: scale(1.1);
-  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
-     M11=1.1, M12=-0, M21=0, M22=1.1);
+a .about-panel--components:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
 
-  box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
+  -moz-transform: scale(1.01);
+   -webkit-transform: scale(1.01);
+   -o-transform: scale(1.01);
+   transform: scale(1.01);
+   -ms-transform: scale(1.01);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+     M11=1.01, M12=-0, M21=0, M22=1.01);
 }
 
 .about-panel--components h2 {
