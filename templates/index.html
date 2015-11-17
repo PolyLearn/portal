@@ -4,29 +4,37 @@
 
 <div class="android-be-together-section mdl-typography--text-center">
   <div class="android-font android-slogan">Réussir n'a jamais été aussi facile</div>
-  <div class="android-font android-sub-slogan">Bienvenue sur PolyLearn... nous utilisons une technologie d'ancrage mémoriel</div>
+  <div class="android-font android-sub-slogan">Venez découvrir une nouvelle méthode d'entrainement à la pointe de la technologie</div>
 
   <div class="mdl-grid">
-    <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-phone">
+    <a href="{{ app_url('toeic') }}" class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-phone">
     <section class="about-panel-1 about-panel--components mdl-color-text--white">
-      <h2>TOEIC/BULATS</h2>
+      <h2>TOEIC</h2>
     </section>
     </a>
 
-    <a href="http://polylearn.co" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+    <a href="#" class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
     <section class="about-panel-2 about-panel--components mdl-color-text--white">
       <h2>Code de la Route</h2>
     </section>
     </a>
+
+    <a href="#" class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-phone">
+    <section class="about-panel-3 about-panel--components mdl-color-text--white">
+      <h2>BULATS</h2>
+    </section>
+    </a>
+
+    <div class="android-font android-create-character mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-phone">
+      <a href="{{ url_for('products')}}" style="display:inline-block">choisissez votre examen</a>
+      <br>
+      <p>
+        <i class="material-icons text-success" style="font-size:35px; padding-top:5px;">check</i> Nous vous aiderons à réussir
+      </p>
+    </div>
+
   </div>
 
-  <div class="android-font android-create-character">
-    <a href="{{ url_for('products')}}" style="display:inline-block">choisissez votre examen</a>
-    <br>
-    <p>
-      <i class="material-icons text-success" style="font-size:35px; padding-top:5px;">check</i> Nous vous aiderons à réussir
-    </p>
-  </div>
 
   <a href="#features">
     <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
@@ -41,6 +49,7 @@
   <br>
   <div class="mdl-typography--headline-color-contrast">et bien plus...</div>
 
+<br><br>
   {% include 'includes/features.html' %}
 
 <br><br>
@@ -74,8 +83,8 @@
     <div class="android-wear-band-text">
       <div class="mdl-typography--display-2 mdl-typography--font-thin">Ancrage mémoriel</div>
       <p>
-        <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-          En savoir plus sur notre technologie&nbsp;<i class="material-icons">chevron_right</i>
+        <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="{{ url_for('concept')}}#technologys">
+          En savoir plus sur nos technologies&nbsp;<i class="material-icons">chevron_right</i>
         </a>
       </p>
     </div>

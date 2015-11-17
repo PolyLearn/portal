@@ -17,7 +17,7 @@ En savoir plus sur les avantages et le concept de la plateforme.
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>Avoir la meilleure plateforme de préparation possible pour réussir un examen</h4>
-                Nous pensons que pour réussir un examen, il faut dans les meilleures conditions possibles avec un outil adapté capable de faire gagner du temps et d'optimiser la progression.
+                Nous pensons que pour réussir un examen, il faut être dans les meilleures conditions possibles avec un outil adapté capable de faire gagner du temps et d'optimiser la progression.
               </div>
               <div class="mdl-card__actions">
                 <a href="{{ url_for('products') }}" class="mdl-button">Voir les examens auxquels nous pouvons vous aider à réussir</a>
@@ -34,7 +34,7 @@ En savoir plus sur les avantages et le concept de la plateforme.
                     <img src="https://cdn4.iconfinder.com/data/icons/flat-rounded-seo-icons/80/page-quality-128.png" width="100" height="100">
                   </div>
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <div class="mdl-cell--middle section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h2 class="mdl-typography--title" style="margin:10px 0;">Contenu pédagogique d'une grande qualité</h2>
                   <p>
                     Nous portons une grande attention au contenu que nous vous mettons à disposition.
@@ -43,34 +43,33 @@ En savoir plus sur les avantages et le concept de la plateforme.
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--middle">
                   <div class="section__circle-container__circle">
-                    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-free/128/target.png" width="100" height="100">
+                    <img src="{{url_for('static', filename='images/features/target.png')}}" width="100" height="100">
                   </div>
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <div class="mdl-cell--middle section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h2 class="mdl-typography--title" style="margin:10px 0;">Identification des faiblesses</h2>
                   <p>
-                    <b>L'identification des faiblesses</b> est une technologie développé par la <a href="{{ url_for('index')}}">PolyLearn</a> qui vous permet de cerner vos difficultés.
-                    Notre <a href="#">pédagogie est centrée sur vous</a> !
+                    <b>L'identification des faiblesses</b> est une technologie développé par <a href="{{ url_for('index')}}">PolyLearn</a> qui vous permet de cerner vos difficultés.
+                    Notre <a href="{{ url_for('pedagogie')}}">pédagogie est centrée sur vous</a> !
                   </p>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--middle">
                   <div class="section__circle-container__circle">
-                    <img src="https://cdn4.iconfinder.com/data/icons/banking-and-finance/500/graphs-128.png" width="100" height="100">
+                    <img src="{{url_for('static', filename='images/features/parcours.png')}}" width="100" height="100">
                   </div>
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <div class="mdl-cell--middle section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h2 class="mdl-typography--title" style="margin:10px 0;">Progression optimisée et un parcours d'apprentissage sur-mesure</h2>
                   <p>
-                  Grâce à l'identification des faiblesses, nous sommes en mesure de vous proposer un entrainement <i>intelligent</i> qui vous fait travailler vos faiblesses.<br>
-                  Afin de vous faire gagner du temps, nous vous aidons à travailler vos points faibles.
+                  Grâce à nos technologies, nous sommes en mesure de vous proposer un <i>entrainement intelligent</i>  et un <i>parcours d'apprentissage optimisé</i>.
                   </p>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone mdl-cell--middle">
                   <div class="section__circle-container__circle">
-                    <img src="https://cdn4.iconfinder.com/data/icons/web-development-5/500/computer-devices-responsive-128.png" width="100" height="100">
+                    <img src="{{url_for('static', filename='images/features/devices.png')}}" width="100" height="100">
                   </div>
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <div class="mdl-cell--middle section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h2 class="mdl-typography--title" style="margin:10px 0;">Plateforme web et des Applications mobiles</h2>
                   <p>
                     Grâce à notre plateforme internet et nos applications iOS & android, vous travaillez quand vous voulez.
@@ -94,11 +93,11 @@ En savoir plus sur les avantages et le concept de la plateforme.
           -->
           </section>
 
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <section id="technologys" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Une technologie inédite</h4>
-                PolyLearn repose sur une technologie qui permet d'optimiser votre temps de révision.
+                <h4>Des technologies inédites</h4>
+                PolyLearn repose sur des technologies qui permet d'optimiser votre temps de révision.
                 <ul>
                   <li>
                     1. Identification des faiblesses

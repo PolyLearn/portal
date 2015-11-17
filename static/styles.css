@@ -523,7 +523,7 @@ h1 {
   .android-mobile-title {
     display: block !important;
     position: absolute;
-    left: calc(50% - 70px);
+    left: calc(50% - 45px);
     top: 16px;
     -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -608,6 +608,7 @@ a .about-panel--components:hover h2 {
   border: 3px solid white;
   display: inline-block;
   padding: 15px;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .about-panel-1 {
@@ -619,6 +620,12 @@ a .about-panel--components:hover h2 {
 .about-panel-2 {
   background-color: pink;
   background: url('./images/exam/code.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.about-panel-3 {
+  background-color: pink;
+  background: url('./images/exam/bulats.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -853,6 +860,11 @@ a .about-panel--components:hover h2 {
 }
 .mdl-demo .mdl-menu__container {
   z-index: 99;
+}
+
+.mdl-mega-footer--bottom-section .mdl-menu a {
+  display: block;
+  width: 100%;
 }
 
 /* Square card */
