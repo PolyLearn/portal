@@ -223,9 +223,18 @@ h1 {
   padding-top: 60px;
 }
 
+h1.android-slogan {
+  margin-bottom: 10px;
+}
+
 .android-sub-slogan {
   font-size: 21px;
   padding-top: 24px;
+}
+
+h1.android-sub-slogan {
+  margin-bottom: 0;
+  letter-spacing: 0;
 }
 
 .android-create-character {
