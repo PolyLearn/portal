@@ -66,12 +66,10 @@ def response_minify(response):
     """
     minify html response to decrease site traffic
     """
-    if (not app.debug) and (response.content_type == u'text/html; charset=utf-8'):
-        response.set_data(
-            html_minify((response.get_data(as_text=True)))
-        )
+    if (response.content_type == u'text/html; charset=utf-8'):
+        response.direct_passthrough = False
+        response.data = html_minify(response.data)
     return response
-
 
 
 if __name__ == '__main__':
@@ -79,9 +77,7 @@ if __name__ == '__main__':
         freezer.freeze()
         with open("build/sitemap.xml") as f:
              sitemap = f.read()
-        f.close()
         with open("build/sitemap.xml", "w") as f:
              f.write(sitemap.replace("http://localhost/", "http://polylearn.co/"))
-        f.close()
     else:
         app.run()
