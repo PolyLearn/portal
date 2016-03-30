@@ -963,3 +963,18 @@ hr.primary {
   background-size: cover;
   color: white;
 }
+
+.services {
+  padding: 40px 0 40px 0;
+}
+
+.services i {
+  font-size: 40px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 20px
+}
+
+.services .mdl-cell {
+  padding: 8px;
+}
