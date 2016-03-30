@@ -4,7 +4,7 @@
 
 <div class="android-be-together-section mdl-typography--text-center">
   <div class="android-font android-slogan">Réussir n'a jamais été aussi facile</div>
-  <h1 class="android-font android-sub-slogan">Venez découvrir une nouvelle méthode d'entrainement à la pointe de la technologie</h1>
+  <h1 class="android-font android-sub-slogan">Découvrez notre méthode d'entrainement utilisant des technologies inédites</h1>
 
   <div class="mdl-grid">
     <a href="{{ app_url('toeic') }}" class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-phone">
@@ -25,19 +25,11 @@
     </section>
     </a>
 
-    <div class="android-font android-create-character mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-phone">
-      <a href="{{ url_for('products')}}" style="display:inline-block">choisissez votre examen</a>
-      <br>
-      <p>
-        <i class="material-icons text-success" style="font-size:35px; padding-top:5px;">check</i> Nous vous aiderons à réussir
-      </p>
-    </div>
-
   </div>
 
 
   <a href="#features">
-    <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+    <button class="android-fab mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">expand_more</i>
     </button>
   </a>
@@ -45,14 +37,18 @@
 
 <div class="android-screen-section mdl-typography--text-center">
   <a name="features"></a>
-  <h3 class="mdl-typography--display-1-color-contrast">Une suite complète d'entrainement</h3>
-  <br>
-  <div class="mdl-typography--headline-color-contrast">et bien plus...</div>
+  <h3 class="mdl-typography--display-1 font-300">Préparation complète à votre examen ou votre certification</h3>
+  <hr class="primary">
+  <p style="max-width:550px; margin: 0 auto;">
+    Nos experts ont identifié et selectionné les différents aspects pédagogiques permettant un accompagnement et une réussite rapide dans vos examens/certifications.
+  </p>
 
-<br><br>
-  {% include 'includes/features.html' %}
+  <div class="container">
+    <div class="mdl-grid">
 
-<br><br>
+    </div>
+  </div>
+
   <div>
     <a href="{{ url_for('concept')}}" class="mdl-button mdl-js-button mdl-button--primary">
       Le concept
@@ -62,58 +58,37 @@
       Voir les examens
     </a>
   </div>
-
 </div>
-<div class="android-wear-section">
 
-  <div class="android-wear-band">
-
-    <div class="mdl-grid" style="margin-top:-150px;">
-      <div class="mdl-cell--3-col">
-      </div>
-      <div class="mdl-shadow--2dp mdl-cell mdl-cell--6-col inside-card">
-        <h3 class="mdl-typography--display-1">Des révisions efficaces</h3>
-        <hr>
-        <p class="mdl-typography--headline mdl-typography--font-thin">
-          Nous avons développé une technologie permettant d'identifier vos faiblesses afin de réduire votre temps de révisions.
-        </p>
-      </div>
-    </div>
-
-    <div class="android-wear-band-text">
-      <div class="mdl-typography--display-2 mdl-typography--font-thin">Ancrage mémoriel</div>
-      <p>
-        <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="{{ url_for('concept')}}#technologies">
-          En savoir plus sur nos technologies&nbsp;<i class="material-icons">chevron_right</i>
-        </a>
-      </p>
-    </div>
+<div class="caption">
+  <div class="container text-center">
+    <i class="material-icons" style="font-size:56px;">center_focus_weak</i>
+    <h3>Une pédagogie centrée sur vous pour une progression rapide</h3>
+    <h4 class="font-300" style="opacity:0.9">Des utilisateurs satisfaits</h4>
   </div>
 </div>
-
 
 <div class="android-more-section">
 
-  <div class="" style="text-align:center">
-    <h3 class="android-section-title mdl-typography--display-1-color-contrast" style="padding-bottom:0">Des applications mobiles</h3>
-    <p class="mdl-typography--title-color-contrast">
-      Entrainez-vous depuis votre smartphone
-    </p>
-
-    <img alt="Available on playstore" src="{{url_for('static', filename='images/index/playstore.png')}}" width="125">
-    <img alt="Available on appstore" width="143" src="{{url_for('static', filename='images/index/appstore.png')}}">
-  </div>
-
-  <div class="mdl-grid">
-    <div class="mdl-cell--4-col">
+  <div class="container mdl-grid">
+    <div class="mdl-cell mdl-cell--6-col">
+      <img alt="PolyLearn App" class="img-responsive-100" src="{{url_for('static', filename='images/index/multidevices.jpg')}}">
     </div>
 
-    <div class="mdl-cell mdl-cell--4-col" style="text-align:center">
-      <img alt="PolyLearn App" class="img-responsive-100"src="{{url_for('static', filename='images/index/poly_phone.png')}}">
+    <div class="mdl-cell mdl-cell--6-col">
+      <h3 class="android-section-title mdl-typography--display-1 font-300">Des applications mobiles et une plateforme web</h3>
+      <hr class="primary" style="margin-left:0;">
+      <p>
+        Nous avons choisi de rendre disponible nos applications sur sur un grand nombre d'appareils afin que vous puissiez vous entrainer de n'importe où.
+      </p>
+
+      <img alt="Available on playstore" src="{{url_for('static', filename='images/index/playstore.png')}}" width="125" style="margin-right:10px;">
+      <img alt="Available on appstore" width="143" src="{{url_for('static', filename='images/index/appstore.png')}}">
+
     </div>
 
-    <div class="mdl-cell--4-col">
-    </div>
+
+
 
   </div>
 </div>
