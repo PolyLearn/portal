@@ -58,7 +58,7 @@ def pedagogie():
 @app.context_processor
 def utility_processor():
     def app_url(app):
-        return u'http://{}.polylearn.co'.format(app)
+        return u'https://{}.polylearn.co'.format(app)
     return dict(app_url=app_url)
 
 @app.after_request
@@ -78,6 +78,6 @@ if __name__ == '__main__':
         with open("build/sitemap.xml") as f:
              sitemap = f.read()
         with open("build/sitemap.xml", "w") as f:
-             f.write(sitemap.replace("http://localhost/", "http://polylearn.co/"))
+             f.write(sitemap.replace("http://localhost/", "https://polylearn.co/"))
     else:
         app.run()
