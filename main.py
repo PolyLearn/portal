@@ -52,7 +52,9 @@ def thanks():
 def pedagogie():
     return render_template('pedagogie.html')
 
-
+@app.route("/legal.html")
+def legal():
+    return render_template('legal.html')
 
 
 @app.context_processor

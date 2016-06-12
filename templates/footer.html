@@ -32,21 +32,11 @@
 
 </section>
 
-<footer class="android-footer mdl-mega-footer">
-  <div class="mdl-mega-footer--top-section">
-    <div class="mdl-mega-footer--left-section">
-      <a href="https://www.facebook.com/polylearn.co/">
-      <img alt="Facebook" src="{{url_for('static', filename='images/social/facebook.png')}}">
-      </a>
-      &nbsp;
-      <a href="https://www.google.com/+Polylearn">
-      <img alt="Google+" src="{{url_for('static', filename='images/social/googleplus.png')}}">
-      </a>
-      &nbsp;
-      <a href="https://twitter.com/PolyLearn_co">
-      <img alt="Twitter" src="{{url_for('static', filename='images/social/twitter.png')}}">
-      </a>
-    </div>
+
+<footer class="mdl-mega-footer polylearn-footer">
+
+  <div class="mdl-mega-footer__top-section">
+
     <div class="mdl-mega-footer--right-section">
       <a class="mdl-typography--font-light" href="#top">
         Revenir en haut
@@ -55,38 +45,51 @@
     </div>
   </div>
 
-  <div class="mdl-mega-footer--middle-section">
-    <p class="mdl-typography--font-light">PolyLearn © 2016</p>
-    <p class="mdl-typography--font-light">Réussir n'a jamais été aussi facile</p>
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">PolyLearn</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('products')}}">Examens</a></li>
+        <li><a href="{{url_for('concept')}}">Concept</a></li>
+        <li><a href="{{url_for('pedagogie')}}">Pédagogie</a></li>
+        <li><a href="{{url_for('about')}}">L'équipe</a></li>
+        <li><a href="{{url_for('about')}}">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Examens et certifications</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{ app_url('toeic') }}">TOEIC</a></li>
+        <li><a href="#">BULATS</a></li>
+        <li><a href="#">Code de la Route</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Réseaux sociaux</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="https://www.facebook.com/polylearn.co/">Facebook</a></li>
+        <li><a href="https://twitter.com/PolyLearn_co">Twitter</a></li>
+        <li><a href="https://www.google.com/+Polylearn">Google</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <div class="fb-page" data-href="https://www.facebook.com/polylearn.co/" data-tabs="timeline" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/polylearn.co/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/polylearn.co/">PolyLearn</a></blockquote></div>
+    </div>
+
   </div>
 
-  <div class="mdl-mega-footer--bottom-section">
-    <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-      Les examens
-      <i class="material-icons">arrow_drop_up</i>
-    </a>
-    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-      <a href="{{ app_url('toeic') }}"><li class="mdl-menu__item">TOEIC</li></a>
-      <li class="mdl-menu__item">Code de la route</li>
-      <li class="mdl-menu__item">BULATS</li>
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">PolyLearn © 2016</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="{{url_for('legal')}}">Conditions générales d'utilisations</a></li>
     </ul>
-
-    <!--
-    <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-      Pour les organismes de formations et écoles
-      <i class="material-icons">arrow_drop_up</i>
-    </a>
-    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-      <li class="mdl-menu__item">Nos offres</li>
-      <li class="mdl-menu__item">Nos avantages</li>
-    </ul>
-  -->
-
-
-    <a class="android-link mdl-typography--font-light" href="{{ url_for('contact')}}">Nous contacter</a>
-    <!--
-    <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-  -->
   </div>
 
 </footer>
