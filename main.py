@@ -56,6 +56,9 @@ def pedagogie():
 def legal():
     return render_template('legal.html')
 
+@app.route("/robots.txt")
+def robots():
+    return render_template('robots.txt')
 
 @app.context_processor
 def utility_processor():
