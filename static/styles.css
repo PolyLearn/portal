@@ -136,9 +136,18 @@ h1 {
     line-height: 68px;
     background-color: transparent !important;
     border-bottom: 4px solid transparent;
+    -webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    transition: all .1s ease-in;
   }
 
     .android-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #2B3882;
+    }
+
+    .android-navigation .mdl-navigation__link.is_active {
+      color: #2B3882;
       border-bottom: 4px solid #2B3882;
     }
 
