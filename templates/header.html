@@ -16,12 +16,17 @@
         <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'concept' %} is_active {%endif%}" href="{{ url_for('concept')}}">Le concept</a>
         <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'pedagogie' %} is_active {%endif%}" href="{{url_for('pedagogie')}}">La pédagogie</a>
         <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'about' %} is_active {%endif%}" href="{{url_for('about')}}">L'équipe</a>
-        <a class=" mdl-typography--text-uppercase" href="{{url_for('contact')}}">
-          <label class="mdl-button mdl-button--icon" for="search-field">
-            <i class="material-icons">email</i>
-          </label>
-        </a>
+        <button id="run-app" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="#">
+          Lancer
+        </button>
       </nav>
+    </div>
+
+    <div class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="run-app">
+      <a class="mdl-menu__item" href="{{ app_url('toeic') }}">TOEIC</a>
+      <a class="mdl-menu__item" href="{{ url_for('products')}}">BULATS</a>
+      <a class="mdl-menu__item" href="{{ url_for('products')}}">Code de la Route</a>
     </div>
 
     <a href="/">

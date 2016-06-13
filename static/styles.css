@@ -38,6 +38,10 @@ h1 {
   margin-top: 0px;
 }
 
+#run-app {
+  margin-left: 15px;
+}
+
 ::-moz-selection {
   background-color: #64ffda;
   color: black;
