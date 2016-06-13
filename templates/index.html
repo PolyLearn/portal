@@ -90,31 +90,87 @@
   </div>
 </div>
 
-<div class="android-more-section">
 
-  <div class="container mdl-grid">
-    <div class="mdl-cell mdl-cell--6-col">
-      <img alt="PolyLearn App" class="img-responsive-100" src="{{url_for('static', filename='images/index/multidevices.jpg')}}">
-    </div>
+<div class="grey-bg android-screen-section" id="timeline">
+  <div class="container mdl-typography--text-center">
+    <h3 class="mdl-typography--display-1 font-300">Comment ça marche ?</h3>
+    <hr class="primary">
 
-    <div class="mdl-cell mdl-cell--6-col">
-      <h3 class="android-section-title mdl-typography--display-1 font-300">Des applications mobiles et une plateforme web</h3>
-      <hr class="primary" style="margin-left:0;">
-      <p>
-        Nous avons choisi de rendre disponible nos applications sur sur un grand nombre d'appareils afin que vous puissiez vous entrainer de n'importe où.
+    <div class="step">
+      <span class="number">1</span>
+      <h4>Identification</h4>
+      <p class="mdl-typography--headline">
+        Grâce à un test rapide, le système va pré-identifier vos faiblesses les plus importantes
       </p>
-
-      <img alt="Available on playstore" src="{{url_for('static', filename='images/index/playstore.png')}}" width="125" style="margin-right:10px;">
-      <img alt="Available on appstore" width="143" src="{{url_for('static', filename='images/index/appstore.png')}}">
-
     </div>
 
+    <div class="step">
+      <span class="number">2</span>
+      <h4>Élaboration</h4>
+      <p class="mdl-typography--headline">
+        Ensuite, le système élaborera un programme d'apprentissage sur-mesure permettant de vous faire réussir rapidement l'examen
+      </p>
+    </div>
 
-
+    <div class="step">
+      <span class="number">3</span>
+      <h4>Entrainement</h4>
+      <p class="mdl-typography--headline">
+        Vous pouvez vous entrainer, l'adaptative-learning mise en place va continuer à améliorer l'élaboration de votre programme d'apprentissage et ainsi vous faire gagner du temps
+      </p>
+    </div>
 
   </div>
 </div>
 
+
+
+<div class="android-more-section white-bg" id="showcase">
+  <div class="mdl-typography--text-center">
+    <h3 class="mdl-typography--display-1 font-300">Des modules pour progresser</h3>
+    <hr class="primary">
+
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+        <div class="show" style="background:url({{url_for('static', filename='images/index/lessons-toeic.min.jpg')}}) center center no-repeat">
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+        <div class="show" style="background:url({{url_for('static', filename='images/index/training-toeic.min.jpg')}}) center center no-repeat">
+        </div>
+      </div>
+      <!--
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+        <div class="show" style="background:url({{url_for('static', filename='images/index/lessons-toeic.png')}}) center center no-repeat">
+        </div>
+      </div>
+    -->
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+        <div class="show" style="background:url({{url_for('static', filename='images/index/lexicon-toeic.min.jpg')}}) center center no-repeat">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+<div class="android-screen-section grey-bg">
+  <div class="mdl-typography--text-center">
+    <h3 class="mdl-typography--display-1 font-300">Des applications mobiles et une plateforme web</h3>
+    <hr class="primary">
+    <p style="max-width:550px; margin: 0 auto;">
+      Nous avons choisi de rendre disponible nos applications sur sur un grand nombre d'appareils afin que vous puissiez vous entrainer de n'importe où.
+    </p>
+    <br>
+    <br>
+    <img alt="Available on playstore" src="{{url_for('static', filename='images/index/playstore.png')}}" width="125" style="margin-right:10px;">
+    <img alt="Available on appstore" width="143" src="{{url_for('static', filename='images/index/appstore.png')}}">
+  </div>
+</div>
 {% endblock %}
 
 
