@@ -36,10 +36,6 @@ def about():
 def products():
     return render_template('products.html')
 
-@app.route("/concept.html")
-def concept():
-    return render_template('concept.html')
-
 @app.route("/contact.html")
 def contact():
     return render_template('contact.html')
