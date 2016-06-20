@@ -13,7 +13,6 @@
     <div class="android-navigation-container">
       <nav class="android-navigation mdl-navigation">
         <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'products' %} is_active {%endif%}" href="{{ url_for('products')}}">Les examens</a>
-        <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'concept' %} is_active {%endif%}" href="{{ url_for('concept')}}">Le concept</a>
         <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'pedagogie' %} is_active {%endif%}" href="{{url_for('pedagogie')}}">La pédagogie</a>
         <a class="mdl-navigation__link mdl-typography--text-uppercase {% if request.endpoint == 'about' %} is_active {%endif%}" href="{{url_for('about')}}">L'équipe</a>
         <button id="run-app" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="#">
@@ -46,7 +45,6 @@
   </span>
   <nav class="mdl-navigation">
     <a class="mdl-navigation__link" href="{{ url_for('products')}}">Les examens</a>
-    <a class="mdl-navigation__link" href="{{ url_for('concept')}}">Le concept</a>
     <a class="mdl-navigation__link" href="{{ url_for('pedagogie')}}">La pédagogie</a>
     <a class="mdl-navigation__link" href="{{ url_for('about')}}">L'équipe</a>
     <div class="android-drawer-separator"></div>
