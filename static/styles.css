@@ -78,13 +78,18 @@ h1 {
   color: #3f51b5;
 }
 
-#timeline .step h4 {
+#timeline h3 {
+  background-color: #f3f3f3;
+}
 
+#timeline .step h4 {
+  background-color: #f3f3f3;
 }
 
 #timeline .step p {
   color : #767777;
   font-size: 20px;
+  background-color: #f3f3f3;
 }
 
 #showcase .show {
