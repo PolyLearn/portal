@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
+from flask.ext.babel import Babel
 from htmlmin.minify import html_minify
 from flask_sitemap import Sitemap
 import sys
@@ -11,6 +12,9 @@ app.config.update(
     FREEZER_RELATIVE_URLS=True,
     SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS=True,
 )
+
+app.config.from_pyfile('mysettings.cfg')
+babel = Babel(app)
 
 ext = Sitemap(app=app)
 freezer = Freezer(app)
