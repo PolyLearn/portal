@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_frozen import Freezer
 from flask.ext.babel import Babel
 from htmlmin.minify import html_minify
@@ -13,8 +13,7 @@ app.config.update(
     SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS=True,
 )
 
-app.config.from_pyfile('mysettings.cfg')
-babel = Babel(app)
+babel = Babel(app,'fr')
 
 ext = Sitemap(app=app)
 freezer = Freezer(app)
@@ -76,6 +75,9 @@ def response_minify(response):
         response.data = html_minify(response.data)
     return response
 
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(['de','fr','en','cn'])
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
