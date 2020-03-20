@@ -75,8 +75,17 @@
 
   {% block script %}{% endblock %}
 
-  <script type="text/javascript">CRISP_WEBSITE_ID = "f4d517b9-c49f-4dae-b269-b085455b3da2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script>
+  window.intercomSettings = {
+    app_id: "vfydfavo"
+  };
+</script>
 
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/vfydfavo'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/vfydfavo';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+    
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
   +function(l,e){(ct=this[GoogleAnalyticsObject='ct']||function(l,e){(ct.q=ct.q||[]).push(arguments)}).l=+new Date,l=document.createElement('script'),l.src='//www.google-analytics.com/analytics.js',(e=document.getElementsByTagName('script')[0]).parentNode.insertBefore(l,e);try{localStorage.setItem(ct.l,ct.l),l=localStorage.getItem(ct.l)-ct.l,localStorage.removeItem(ct.l)}catch(l){};ct('create','UA-67551062-2',l?{}:{clientId:localStorage.clientId,storage:'none'}),ct(function(l,e){localStorage.clientId=l.get('clientId')}),ct('send','pageview')}()
